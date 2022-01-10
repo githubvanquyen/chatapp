@@ -8,7 +8,7 @@ const{ Server, Socket } = require('socket.io');
 
 const io = new Server(server);
 
-const port = 4000;
+const port = process.env.PORT || 3000;
 
 
 app.get('/', (req, res) =>{
